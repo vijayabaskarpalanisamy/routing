@@ -1,0 +1,34 @@
+
+
+	<form (ngSubmit)="addStudent()" ngNativeValidate>
+		<div class="form-group">
+      <label for="name">Name:</label> 
+      <input type="text" class="form-control" id="name" [(ngModel)]="student.name" name="name" >
+		</div>
+ 
+		<div class="form-group">
+      <label for="phoneno">phoneno:</label> 
+      <input type="text" class="form-control" id="phoneno" [(ngModel)]="student.phoneno" name="phoneno" >
+		</div>
+    
+    <div class="form-group">
+      <label for="department">department:</label> 
+      <input type="text" class="form-control" id="department" [(ngModel)]="student.department" name="department" >
+		</div>
+ <div class="form-group">
+      <label for="city">City:</label> 
+      <input type="text" class="form-control" id="city" [(ngModel)]="student.city" name="city" >
+		</div>
+    <div class="form-group">
+      <label for="email">Email:</label> 
+      <input type="text" class="form-control" id="email" [(ngModel)]="student.email" name="email" >
+		</div>
+ 
+		<div class="btn-group">
+			
+			<button type="reset" class="btn btn-primary">Reset</button>
+			<button type="submit" class="btn btn-success">Submit</button>
+				
+		</div>
+	</form>
+</div>
